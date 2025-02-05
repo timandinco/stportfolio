@@ -15,8 +15,8 @@ export default async function Project() {
           Featured projects I&apos;m working on.
         </h1>
         <p className="text-base text-zinc-400 leading-relaxed">
-          These are notable projects I'm working on. These are concepts and ideas I'm investigating to 
-          further my experience and technologies I'm interested in learning. 
+          These are notable projects I&apos;m working on. These are concepts and ideas I&apos;m investigating to 
+          further my experience and technologies I&apos;m interested in learning. 
         </p>
       </section>
 
