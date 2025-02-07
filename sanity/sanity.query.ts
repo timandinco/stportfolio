@@ -1,6 +1,7 @@
 import { groq } from "next-sanity";
 import client from "./sanity.client";
 
+
 export async function getProfile() {
   return client.fetch(
     groq`*[_type == "profile"]{
@@ -15,7 +16,9 @@ export async function getProfile() {
       "resumeURL": resumeURL.asset->url, 
       socialLinks, 
       skills 
-    }`
+    }`, 
+    {}, 
+    { next: { revalidate: 3600 } }
   );
 }
 
