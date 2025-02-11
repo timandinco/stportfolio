@@ -1,4 +1,7 @@
+import "server-only";
 import {createClient, type ClientConfig } from "@sanity/client";
+
+
 
 const config: ClientConfig = {
     projectId: "sxwpo1sg",
@@ -10,3 +13,7 @@ const config: ClientConfig = {
 const client = createClient(config);
 
 export default client;
+
+
+
+

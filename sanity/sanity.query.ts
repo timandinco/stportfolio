@@ -16,9 +16,7 @@ export async function getProfile() {
       "resumeURL": resumeURL.asset->url, 
       socialLinks, 
       skills 
-    }`, 
-    {}, 
-    { next: { revalidate: 3600 } }
+    }`
   );
 }
 
