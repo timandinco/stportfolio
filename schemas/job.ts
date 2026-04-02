@@ -47,6 +47,15 @@ const job = {
       title: "End Date",
       type: "date",
     },
+    {
+      name: "projects",
+      title: "Projects / Websites",
+      type: "array",
+      of: [{ type: "jobProject" }],
+      options: {
+        sortable: true,
+      },
+    },
   ],
 };
 
