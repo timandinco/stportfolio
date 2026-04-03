@@ -1,6 +1,9 @@
-export default {
-  name: "projectItem",
-  title: "Project Item",
+
+import { defineField } from "sanity";
+
+const jobProject = {
+  name: "jobProject",
+  title: "Job Project",
   type: "object",
   fields: [
     {
@@ -49,3 +52,5 @@ export default {
     },
   ],
 };
+
+export default jobProject;
